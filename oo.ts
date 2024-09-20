@@ -1,25 +1,14 @@
-function multiplicando(n1: number, n2: number){
-    return n1 * n2
+function multiplicando(n1: number, n2: number): number {
+    return n1 * n2;
 }
 
+const resultado: number = multiplicando(6, 5);
 
-const resultado = multiplicando(6,5);
+function saudacao(nome: string): string {
+    return `olá ${nome}`;
+}
 
-function saudacao(nome: string){        //ou      function saudacao(nome: string){
-                                                    //  return `olá ` + nome;
-                                                    // }
-    return `olá ${nome}`
-};
-
-
-
-// 
-
-
-
-
-const nome = saudacao('Daniel');
-
+const nome: string = saudacao('Daniel');
 console.log(nome);
 console.log(resultado);
 
